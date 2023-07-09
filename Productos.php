@@ -15,10 +15,10 @@
 
 <h1> Nuestros productos</h1>
 <?php
-$serverName = "LAPTOP-2RMDJCNI\SQLEXPRESS";
-$user = "LAPTOP-2RMDJCNI\hecto";
-$password = "";
-$database = "Tienda";
+$serverName = "localhost";
+$user = "root";
+$password = "root";
+$database = "tiendamm";
 $conn = mysqli_connect($serverName, $user, $password, $database )
 ?> 
 
@@ -30,7 +30,7 @@ $conn = mysqli_connect($serverName, $user, $password, $database )
     </tr>
 
     <?php 
-    $sql = "SELECT * from Producto";
+    $sql = "SELECT * from producto";
     $result = mysqli_query($conn, $sql);
     
     while($mostrar= mysqli_fetch_array($result)){
@@ -40,7 +40,7 @@ $conn = mysqli_connect($serverName, $user, $password, $database )
     
     <tr>
         <td><?php echo $mostrar['Nombre'] ?></td>
-        <td><?php echo $mostrar['precio'] ?> </td>
+        <td><?php echo $mostrar['Precio'] ?> </td>
     </tr>
 <?php    
 }
