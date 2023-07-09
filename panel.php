@@ -38,6 +38,9 @@ if (!isset($_SESSION['rut'])) {
         <li class="nav-item">
           <a class="nav-link" href="acceso.php">Login</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="accesoAdmin.php">Login-Administrador</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -61,7 +64,7 @@ $mostrar= mysqli_fetch_array($result);
 
 
 
-    <h1>Bienvenido <?php echo $mostrar['nombre'] ?> </h1>
+    <h1>Bienvenido(a) <?php echo $mostrar['nombre'] ?> </h1>
     <?php
 $serverName = "localhost";
 $user = "root";
@@ -78,7 +81,10 @@ $result3 = mysqli_query($conn, $sql3);
 $mostrar3 = mysqli_fetch_array($result3)
 
 ?>
-    <p>Usted es un <?php echo $mostrar3['descripcion'] ?></p>
+    <p>Usted es un <?php echo $mostrar3['descripcion']?> y está en la sección de Vendedor</p>
+    <div>
+        <p>Usted se encuentra validado para vender en M&M</p>
+    </div>    
 </body>
 
 </html>
