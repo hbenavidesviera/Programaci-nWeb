@@ -1,15 +1,26 @@
+<?php
+//Iniciamos la session
+session_start();
+
+// Validar el inicio de sesión
+if (!isset($_SESSION['rut'])) {
+    // Redirigir al formulario de inicio de sesión si no hay sesión activa
+    header('Location: accesoAdmin.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
-    <title>Login</title>
 </head>
-<body>
 
+<body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 <div class="container-fluid">
     <a class="navbar-brand" href="#">M&M</a>
@@ -35,25 +46,42 @@
   </div>
 </nav>
 
-<h1>Login </h1>
+<?php
+$serverName = "localhost";
+$user = "root";
+$password = "root";
+$database = "tiendamm";
+$conn = mysqli_connect($serverName, $user, $password, $database );
+$rut = $_SESSION['rut'];
+
+$sql = "SELECT nombre from usuario Where rut='$rut'";
+$result = mysqli_query($conn, $sql);
+$mostrar= mysqli_fetch_array($result);
+
+?> 
 
 
-    <form action="Login.php" method="post">
-    <div class="mb-3">
 
-        <label for="Rut">Rut:</label>
-        <input type="text" name="rut" placeholder="rut sin puntos y con guión">
-    </div>
-    <div class="mb-3">
 
-        <label for="Rut">Clave:</label>
-        <input type="password" name="clave">
-    </div>
-    <div class="mb-3">
 
-        <input type="submit" value="Ingresar">
-    </div>
+    <h1>Bienvenido <?php echo $mostrar['nombre'] ?> </h1>
+    <?php
+$serverName = "localhost";
+$user = "root";
+$password = "root";
+$database = "tiendamm";
+$conn = mysqli_connect($serverName, $user, $password, $database );
+$rut = $_SESSION['rut'];
+$sql2 = "SELECT idPerfil from usuario where rut='$rut'";
+$result2 = mysqli_query($conn, $sql2);
+$mostrar2 = mysqli_fetch_array($result2);
+$tipousuario = $mostrar2['idPerfil'];
+$sql3 = "SELECT descripcion from perfil where idPerfil='$tipousuario'";
+$result3 = mysqli_query($conn, $sql3);
+$mostrar3 = mysqli_fetch_array($result3)
 
-    </form>
+?>
+    <p>Usted es un <?php echo $mostrar3['descripcion'] ?></p>
 </body>
+
 </html>

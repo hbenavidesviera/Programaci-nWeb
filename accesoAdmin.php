@@ -38,7 +38,7 @@
 <h1>Login </h1>
 
 
-    <form action="Login.php" method="post">
+    <form action="LoginAdmin.php" method="post">
     <div class="mb-3">
 
         <label for="Rut">Rut:</label>
