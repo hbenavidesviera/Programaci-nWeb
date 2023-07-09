@@ -5,7 +5,7 @@ session_start();
 // Validar el inicio de sesión
 if (!isset($_SESSION['rut'])) {
     // Redirigir al formulario de inicio de sesión si no hay sesión activa
-    header('Location: index.php');
+    header('Location: acceso.php');
     exit();
 }
 ?>
