@@ -11,7 +11,7 @@
 <!-- navegador -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 <div class="container-fluid">
-    <a class="navbar-brand" href="#">M M</a>
+    <a class="navbar-brand" href="#">M&M</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,6 +55,8 @@ $conn = mysqli_connect($serverName, $user, $password, $database )
     <tr>
         <td>Nombre</td>
         <td>precio</td>
+        <td>Marca</td>
+        <td>Cantidad</td>
     </tr>
 
     <?php 
@@ -69,6 +71,9 @@ $conn = mysqli_connect($serverName, $user, $password, $database )
     <tr>
         <td><?php echo $mostrar['Nombre'] ?></td>
         <td><?php echo $mostrar['Precio'] ?> </td>
+        <td><?php echo $mostrar['marca'] ?> </td>
+        <td><?php echo $mostrar['gramos'] ?> </td>
+        
     </tr>
 <?php    
 }
