@@ -63,7 +63,7 @@ $mostrar= mysqli_fetch_array($result);
 
 
 
-
+<div class="container-md">
     <h1>Bienvenido <?php echo $mostrar['nombre'] ?> </h1>
     <?php
 $serverName = "localhost";
@@ -82,6 +82,7 @@ $mostrar3 = mysqli_fetch_array($result3)
 
 ?>
     <p>Usted es un <?php echo $mostrar3['descripcion'] ?></p>
+</div>
  <?php
 $serverName = "localhost";
 $user = "root";
@@ -125,15 +126,16 @@ $conn = mysqli_connect($serverName, $user, $password, $database )
 ?>
 </table> 
 </div> 
-<div>
+<div class="container-md">
         <form action="crear.php" method="POST">
             <h1>Agregar producto</h1>
-            
+            <div class="mb-3">
             <input type="text" name="Nombre" placeholder="nombre" >
             <input type="text" name="Precio" placeholder="precio" >
             <input type="text" name="marca" placeholder="marca" >
             <input type="text" name="gramos" placeholder="cantidad">
             <input type="submit" value="crear">
+            </div>
 
         </form>
 
