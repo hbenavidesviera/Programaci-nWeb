@@ -20,7 +20,7 @@ if (!isset($_SESSION['rut'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-image: linear-gradient(to right, #FFFFFF, rgb(255, 122, 89));">
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 <div class="container-fluid">
     <a class="navbar-brand" href="#">M&M</a>
@@ -59,10 +59,6 @@ $result = mysqli_query($conn, $sql);
 $mostrar= mysqli_fetch_array($result);
 
 ?> 
-
-
-
-
 
     <h1>Bienvenido(a) <?php echo $mostrar['nombre'] ?> </h1>
     <?php
