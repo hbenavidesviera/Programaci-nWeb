@@ -19,7 +19,7 @@ if (!isset($_SESSION['rut'])) {
 </head>
 
 <body>
-    <h1>Bienvenido, <?php echo $_SESSION['rut']; ?>!</h1>
+    <h1>Bienvenido, <?php echo $_SESSION['nombre']; ?>!</h1>
     <p>Esta es una página protegida que solo puede ser accedida después de iniciar sesión.</p>
 </body>
 

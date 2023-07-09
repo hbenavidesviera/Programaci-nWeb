@@ -5,6 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["rut"]) && isset($_POST["clave"])) {
         $rut = $_POST["rut"];
         $clave = $_POST["clave"];
+        $Nombre = $_POST["nombre"]
 
         // Aquí puedes realizar las operaciones necesarias con los datos recibidos
 

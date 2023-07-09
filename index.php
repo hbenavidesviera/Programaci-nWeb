@@ -9,7 +9,9 @@
     <title>Document</title>
 </head>
 <body>
-<nav class="nav">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
   <a class="nav-link active" aria-current="page" href="#">Active</a>
   <a class="nav-link" href="Index.php">Inicio</a>
   <a class="nav-link" href="Productos.php">Productos</a>
