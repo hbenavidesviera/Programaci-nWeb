@@ -33,6 +33,7 @@
     </div>
   </div>
 </nav>
+<body style="background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));">
 <!-- titulo de la pag -->
 <header>
 <h1> Nuestros productos</h1>
@@ -95,7 +96,7 @@ $conn = mysqli_connect($serverName, $user, $password, $database )
  
 
 
-
+</body>
     
 
 
