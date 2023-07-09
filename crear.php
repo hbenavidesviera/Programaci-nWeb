@@ -10,7 +10,7 @@ $precio = $_POST['Precio'];
 $marca = $_POST['marca'];
 $cantidad = $_POST['gramos'];
 
-$sql ="INSERT INTO producto Values ('$id', '$nombre', '$precio', '$marca, '$cantidad)";
+$sql ="INSERT INTO producto (Nombre, Precio, marca, gramos) Values ('$nombre', '$precio', '$marca', '$cantidad')";
 $query = mysqli_query($conn, $sql);
 
 if($query){
