@@ -82,6 +82,64 @@ $mostrar3 = mysqli_fetch_array($result3)
 
 ?>
     <p>Usted es un <?php echo $mostrar3['descripcion'] ?></p>
+ <?php
+$serverName = "localhost";
+$user = "root";
+$password = "root";
+$database = "tiendamm";
+$conn = mysqli_connect($serverName, $user, $password, $database )
+?> 
+<div class="container-md">
+<table class="table table-striped">
+    <tr>
+        <td>ID</td>
+        <td>Nombre</td>
+        <td>precio</td>
+        <td>Marca</td>
+        <td>Cantidad</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <?php 
+    $sql = "SELECT * from producto";
+    $result = mysqli_query($conn, $sql);
+    
+    while($mostrar= mysqli_fetch_array($result)){
+    ?>    
+
+   
+    
+    <tr>
+        <td><?= $mostrar['IdProducto'] ?></td>
+        <td><?php echo $mostrar['Nombre'] ?></td>
+        <td><?php echo $mostrar['Precio'] ?> </td>
+        <td><?php echo $mostrar['marca'] ?> </td>
+        <td><?php echo $mostrar['gramos'] ?> </td>
+        <td><a href="update.php?id=<?= $mostrar['IdProducto']?>">editar</a></td>
+        <td><a href="eliminar.php?id=<?= $mostrar['IdProducto']?>">eliminar</a></td>
+        
+    </tr>
+<?php    
+}
+?>
+</table> 
+</div> 
+<div>
+        <form action="crear.php" method="POST">
+            <h1>Agregar producto</h1>
+            
+            <input type="text" name="Nombre" placeholder="nombre" >
+            <input type="text" name="Precio" placeholder="precio" >
+            <input type="text" name="marca" placeholder="marca" >
+            <input type="text" name="gramos" placeholder="cantidad">
+            <input type="submit" value="crear">
+
+        </form>
+
+    </div>
+
+
 </body>
 
 </html>
