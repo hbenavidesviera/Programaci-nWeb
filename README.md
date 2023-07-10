@@ -4,7 +4,7 @@ Evaluación final de la asignatura de Programación Web, en este proyecto se res
 
 [Prueba Programacion Web EVA 3.pdf](https://github.com/hbenavidesviera/Programaci-nWeb/files/11997059/Prueba.Programacion.Web.EVA.3.pdf)
 
-Durante el proceso nos enfrentamos a muchos problemas, como el tiempo y el dominio de php; sin embargo, el proyecto cumple con los requerimentos solicitados (aunque esteticamente no es muy atractivo, pero es funcional).
+Durante el proceso nos enfrentamos a muchos problemas, como el tiempo y el dominio de php; sin embargo, el proyecto cumple con los requerimientos solicitados (aunque esteticamente no es muy atractivo, pero es funcional).
 Para probar el proyecto puede descargar la base de datos en la carpeta BASE_DE_DATOS y exportarla a MySQL Workbench.
 
 :grin:
