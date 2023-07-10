@@ -40,6 +40,8 @@ if (!isset($_SESSION['rut'])) {
         </li>
         <li class="nav-item">
           <a class="nav-link" href="accesoAdmin.php">Login-Administrador</a>
+          <li class="nav-item">
+          <a class="nav-link" href="Contacto.php">Contacto</a>
         </li>
       </ul>
     </div>

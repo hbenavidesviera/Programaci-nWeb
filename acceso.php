@@ -6,9 +6,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-    <title>Login</title>
+    <title>Inicio de Sesión</title>
 </head>
-<body>
+<body class="text-center">
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 <div class="container-fluid">
@@ -29,33 +29,36 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="accesoAdmin.php">Login-Administrador</a>
+          <li class="nav-item">
+          <a class="nav-link" href="Contacto.php">Contacto</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="container-md">
 <h1>Login </h1>
 
 
     <form action="Login.php" method="post">
     <div class="mb-3">
 
-        <label for="Rut" class="form-label">Rut:</label>
-        <input type="text" name="rut" class="form-control" placeholder="rut sin puntos y con guión">
+        <label for="Rut">Rut:</label>
+        <br>
+        <input type="text" name="rut" placeholder="rut sin puntos y con guión">
     </div>
     <div class="mb-3">
 
-        <label for="Rut" class="form-label">Clave:</label>
-        <input type="password" class="form-control" name="clave">
+        <label for="Rut">Clave:</label>
+        <br>
+        <input type="password" name="clave">
+        <br>
     </div>
     <div class="mb-3">
 
         <input type="submit" value="Ingresar">
-    </div>
+
 
     </form>
-</div>
 <footer>
             <p align="center">Copyright (c) 2023</p>
             <p align="center">Creadores de la Página Web: Shannon Benavides / Héctor Benavides</p>  

@@ -28,12 +28,14 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="accesoAdmin.php">Login-Administrador</a>
+          <li class="nav-item">
+          <a class="nav-link" href="Contacto.php">Contacto</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<body style="background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));">
+<body background="img/background.jpg">
 <!-- titulo de la pag -->
 <header>
 <h1> Nuestros productos</h1>
