@@ -38,7 +38,7 @@
 <body background="img/background.jpg">
 <!-- titulo de la pag -->
 <header>
-<h1> Nuestros productos</h1>
+<h1 style="background-color:orange;"> Nuestros productos</h1>
 </header>
 
 
