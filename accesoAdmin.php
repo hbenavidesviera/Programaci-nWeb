@@ -8,7 +8,7 @@
 
     <title>Login</title>
 </head>
-<body>
+
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 <div class="container-fluid">
@@ -35,19 +35,20 @@
   </div>
 </nav>
 <div class="container-md">
+<body>
 <h1>Login </h1>
 
 
     <form action="LoginAdmin.php" method="post">
     <div class="mb-3">
 
-        <label for="Rut">Rut:</label>
-        <input type="text" name="rut" placeholder="rut sin puntos y con guión">
+        <label for="Rut" class="form-label">Rut:</label>
+        <input type="text" class="form-control" name="rut" placeholder="rut sin puntos y con guión">
     </div>
     <div class="mb-3">
 
-        <label for="Rut">Clave:</label>
-        <input type="password" name="clave">
+        <label for="Rut" class="form-label">Clave:</label>
+        <input type="password"  class="form-control" name="clave">
     </div>
     <div class="mb-3">
 
