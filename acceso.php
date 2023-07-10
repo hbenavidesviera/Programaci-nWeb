@@ -8,7 +8,7 @@
 
     <title>Inicio de Sesión</title>
 </head>
-<body class="text-center">
+<body>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
 <div class="container-fluid">
@@ -36,22 +36,20 @@
     </div>
   </div>
 </nav>
+
+
+<div class="container-md">
 <h1>Login </h1>
-
-
     <form action="Login.php" method="post">
     <div class="mb-3">
 
-        <label for="Rut">Rut:</label>
-        <br>
-        <input type="text" name="rut" placeholder="rut sin puntos y con guión">
+        <label for="Rut" class="form-label">Rut:</label>
+        <input type="text" name="rut" class="form-control" placeholder="rut sin puntos y con guión">
     </div>
     <div class="mb-3">
 
-        <label for="Rut">Clave:</label>
-        <br>
-        <input type="password" name="clave">
-        <br>
+        <label for="Rut" class="form-label">Clave:</label>
+        <input type="password" name="clave" class="form-control">
     </div>
     <div class="mb-3">
 
@@ -59,6 +57,7 @@
 
 
     </form>
+</div>
 <footer>
             <p align="center">Copyright (c) 2023</p>
             <p align="center">Creadores de la Página Web: Shannon Benavides / Héctor Benavides</p>  

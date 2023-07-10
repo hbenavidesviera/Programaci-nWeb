@@ -61,7 +61,7 @@ $result = mysqli_query($conn, $sql);
 $mostrar= mysqli_fetch_array($result);
 
 ?> 
-
+<div class="container-md">
     <h1>Bienvenido(a) <?php echo $mostrar['nombre'] ?> </h1>
     <?php
 $serverName = "localhost";
@@ -82,7 +82,9 @@ $mostrar3 = mysqli_fetch_array($result3)
     <p>Usted es un <?php echo $mostrar3['descripcion']?> y está en la sección de Vendedor</p>
     <div>
         <p>Usted se encuentra validado para vender en M&M</p>
-    </div>    
+    </div>   
+    
+</div>
 </body>
 
 </html>
