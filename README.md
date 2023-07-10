@@ -1,5 +1,16 @@
 # Programaci-nWeb
 
+Evaluación final de la asignatura de Programación Web, en este proyecto se resuelve el problema presentado en el siguiente documento adjunto:
+
+[Prueba Programacion Web EVA 3.pdf](https://github.com/hbenavidesviera/Programaci-nWeb/files/11997059/Prueba.Programacion.Web.EVA.3.pdf)
+
+Durante el proceso nos enfrentamos a muchos problemas, como el tiempo y el dominio de php; sin embargo, el proyecto cumple con los requerimentos solicitados (aunque esteticamente no es muy atractivo, pero es funcional).
+Para probar el proyecto puede descargar la base de datos en la carpeta BASE_DE_DATOS y exportarla a MySQL Workbench.
+
+:grin:
+:grin:
+:grin:
+
 Productos: una tabla conectada a la base de datos del sistema permite observar de forma actualizada, los nombres, precios, cantidades (en gramos) y marcas de los productos en stock: 
 ![image](https://github.com/hbenavidesviera/Programaci-nWeb/assets/135678013/6430aae1-14cf-4a74-8d28-86233cf9c4ea)
 
